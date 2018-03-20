@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win7.exrecord.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtRec"
+            android:layout_marginLeft="10dp"
+            android:text=" 點選錄音檔即可撥放"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/imgRecord"
+            android:layout_below="@+id/txtRec"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/record"/>
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_below="@+id/txtRec"
+            android:layout_toRightOf="@+id/imgRecord"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/play"/>
+        <ImageView
+            android:id="@+id/imgStop"
+            android:layout_below="@+id/txtRec"
+            android:layout_toRightOf="@+id/imgPlay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/stop"/>
+        <ImageView
+            android:id="@+id/imgEnd"
+            android:layout_below="@+id/txtRec"
+            android:layout_toRightOf="@+id/imgStop"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/end"/>
+        <TextView
+            android:id="@+id/txtList"
+            android:text="錄音檔清單 : "
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/imgRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:id="@+id/listRec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txtList">
+        </ListView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
